@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hackathon_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,121 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpN-cw-W3p">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="VIv-jY-ebI"/>
+                                    <constraint firstAttribute="height" constant="97" id="YBL-AW-9qz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VIv-jY-ebI"/>
+                                        <exclude reference="YBL-AW-9qz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="VIv-jY-ebI"/>
+                                        <include reference="YBL-AW-9qz"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOt-ym-UHV">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dp8-nw-cuY"/>
+                                    <constraint firstAttribute="width" constant="150" id="ncq-cL-Vv5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="New Alarm"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dp8-nw-cuY"/>
+                                        <exclude reference="ncq-cL-Vv5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="125" y="422" width="151" height="45"/>
+                                    <mask key="constraints">
+                                        <include reference="dp8-nw-cuY"/>
+                                        <include reference="ncq-cL-Vv5"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPP-oy-dJ1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="f2p-8p-H5Q"/>
+                                    <constraint firstAttribute="height" constant="50" id="vqd-QG-064"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="My Alarms"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="f2p-8p-H5Q"/>
+                                        <exclude reference="vqd-QG-064"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="f2p-8p-H5Q"/>
+                                        <include reference="vqd-QG-064"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JPP-oy-dJ1" firstAttribute="top" secondItem="NOt-ym-UHV" secondAttribute="bottom" constant="8" symbolic="YES" id="0zc-vT-cPE"/>
+                            <constraint firstItem="tpN-cw-W3p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="H0F-Mf-QQb"/>
+                            <constraint firstItem="NOt-ym-UHV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YRD-Zc-eGf"/>
+                            <constraint firstAttribute="bottom" secondItem="NOt-ym-UHV" secondAttribute="bottom" constant="133" id="gXM-RS-Faf"/>
+                            <constraint firstItem="NOt-ym-UHV" firstAttribute="trailing" secondItem="JPP-oy-dJ1" secondAttribute="trailing" id="jk1-Qe-iyh"/>
+                            <constraint firstItem="NOt-ym-UHV" firstAttribute="centerX" secondItem="tpN-cw-W3p" secondAttribute="centerX" id="lUW-Qa-Olf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tpN-cw-W3p"/>
+                                <exclude reference="NOt-ym-UHV"/>
+                                <exclude reference="JPP-oy-dJ1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="H0F-Mf-QQb"/>
+                                <exclude reference="YRD-Zc-eGf"/>
+                                <exclude reference="gXM-RS-Faf"/>
+                                <exclude reference="jk1-Qe-iyh"/>
+                                <exclude reference="lUW-Qa-Olf"/>
+                                <exclude reference="0zc-vT-cPE"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="tpN-cw-W3p"/>
+                                <include reference="NOt-ym-UHV"/>
+                                <include reference="JPP-oy-dJ1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="H0F-Mf-QQb"/>
+                                <include reference="YRD-Zc-eGf"/>
+                                <include reference="gXM-RS-Faf"/>
+                                <include reference="jk1-Qe-iyh"/>
+                                <include reference="lUW-Qa-Olf"/>
+                                <include reference="0zc-vT-cPE"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="MyAlarms" destination="JPP-oy-dJ1" id="pHE-gC-764"/>
+                        <outlet property="NewAlarm" destination="NOt-ym-UHV" id="mSX-Rm-rzP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="424.5" y="129"/>
         </scene>
     </scenes>
 </document>
