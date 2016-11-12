@@ -20,9 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var NewAlarm: UIButton!
-    
-    @IBOutlet weak var MyAlarms: UIButton!
+    @IBOutlet var appTitle: UIView!
+
+
+    @IBAction func newAlarm(sender: AnyObject) {
+        print( "new alarm")
+    }
+
+    @IBAction func myAlarms(sender: AnyObject) {
+        print ("my alarms")
+    }
     
     
 

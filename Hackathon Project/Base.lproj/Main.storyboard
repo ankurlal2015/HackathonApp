@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,115 +18,115 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpN-cw-W3p">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ues-7G-CLR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="My Alarms"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="125" y="468" width="150" height="50"/>
+                                </variation>
+                                <connections>
+                                    <action selector="myAlarms:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6nC-PZ-nBv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="grUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI4-fN-HPi">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="116" id="VIv-jY-ebI"/>
-                                    <constraint firstAttribute="height" constant="97" id="YBL-AW-9qz"/>
+                                    <constraint firstAttribute="height" constant="100" id="0kr-To-Nen"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="VIv-jY-ebI"/>
-                                        <exclude reference="YBL-AW-9qz"/>
+                                        <exclude reference="0kr-To-Nen"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="VIv-jY-ebI"/>
-                                        <include reference="YBL-AW-9qz"/>
+                                        <include reference="0kr-To-Nen"/>
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOt-ym-UHV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W4-tb-opM">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="dp8-nw-cuY"/>
-                                    <constraint firstAttribute="width" constant="150" id="ncq-cL-Vv5"/>
+                                    <constraint firstAttribute="width" constant="150" id="GWs-oi-Tf9"/>
+                                    <constraint firstAttribute="height" constant="50" id="THe-Fd-o91"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="xP5-yk-z5y"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="xjl-bh-qtO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="New Alarm"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="dp8-nw-cuY"/>
-                                        <exclude reference="ncq-cL-Vv5"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="125" y="422" width="151" height="45"/>
-                                    <mask key="constraints">
-                                        <include reference="dp8-nw-cuY"/>
-                                        <include reference="ncq-cL-Vv5"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPP-oy-dJ1">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="f2p-8p-H5Q"/>
-                                    <constraint firstAttribute="height" constant="50" id="vqd-QG-064"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="My Alarms"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="f2p-8p-H5Q"/>
-                                        <exclude reference="vqd-QG-064"/>
+                                        <exclude reference="GWs-oi-Tf9"/>
+                                        <exclude reference="THe-Fd-o91"/>
+                                        <exclude reference="xP5-yk-z5y"/>
+                                        <exclude reference="xjl-bh-qtO"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="f2p-8p-H5Q"/>
-                                        <include reference="vqd-QG-064"/>
+                                        <include reference="GWs-oi-Tf9"/>
+                                        <include reference="THe-Fd-o91"/>
+                                        <include reference="xP5-yk-z5y"/>
+                                        <include reference="xjl-bh-qtO"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="newAlarm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAv-Mp-rtT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JPP-oy-dJ1" firstAttribute="top" secondItem="NOt-ym-UHV" secondAttribute="bottom" constant="8" symbolic="YES" id="0zc-vT-cPE"/>
-                            <constraint firstItem="tpN-cw-W3p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="H0F-Mf-QQb"/>
-                            <constraint firstItem="NOt-ym-UHV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YRD-Zc-eGf"/>
-                            <constraint firstAttribute="bottom" secondItem="NOt-ym-UHV" secondAttribute="bottom" constant="133" id="gXM-RS-Faf"/>
-                            <constraint firstItem="NOt-ym-UHV" firstAttribute="trailing" secondItem="JPP-oy-dJ1" secondAttribute="trailing" id="jk1-Qe-iyh"/>
-                            <constraint firstItem="NOt-ym-UHV" firstAttribute="centerX" secondItem="tpN-cw-W3p" secondAttribute="centerX" id="lUW-Qa-Olf"/>
+                            <constraint firstItem="3W4-tb-opM" firstAttribute="leading" secondItem="ues-7G-CLR" secondAttribute="leading" id="0YC-AP-ngd"/>
+                            <constraint firstAttribute="bottom" secondItem="3W4-tb-opM" secondAttribute="bottom" constant="148" id="62B-18-WKN"/>
+                            <constraint firstItem="3W4-tb-opM" firstAttribute="centerX" secondItem="QI4-fN-HPi" secondAttribute="centerX" id="9Ia-Ep-pYN"/>
+                            <constraint firstItem="3W4-tb-opM" firstAttribute="trailing" secondItem="ues-7G-CLR" secondAttribute="trailing" id="BHm-VC-E0t"/>
+                            <constraint firstItem="3W4-tb-opM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KHm-hA-fXA"/>
+                            <constraint firstItem="QI4-fN-HPi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="99" id="coZ-yS-w6g"/>
+                            <constraint firstItem="QI4-fN-HPi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="98" id="iR4-31-Jsl"/>
+                            <constraint firstItem="ues-7G-CLR" firstAttribute="top" secondItem="3W4-tb-opM" secondAttribute="bottom" constant="16" id="noW-HS-t6e"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="tpN-cw-W3p"/>
-                                <exclude reference="NOt-ym-UHV"/>
-                                <exclude reference="JPP-oy-dJ1"/>
+                                <exclude reference="ues-7G-CLR"/>
+                                <exclude reference="QI4-fN-HPi"/>
+                                <exclude reference="3W4-tb-opM"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="H0F-Mf-QQb"/>
-                                <exclude reference="YRD-Zc-eGf"/>
-                                <exclude reference="gXM-RS-Faf"/>
-                                <exclude reference="jk1-Qe-iyh"/>
-                                <exclude reference="lUW-Qa-Olf"/>
-                                <exclude reference="0zc-vT-cPE"/>
+                                <exclude reference="coZ-yS-w6g"/>
+                                <exclude reference="iR4-31-Jsl"/>
+                                <exclude reference="0YC-AP-ngd"/>
+                                <exclude reference="62B-18-WKN"/>
+                                <exclude reference="9Ia-Ep-pYN"/>
+                                <exclude reference="BHm-VC-E0t"/>
+                                <exclude reference="KHm-hA-fXA"/>
+                                <exclude reference="noW-HS-t6e"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="tpN-cw-W3p"/>
-                                <include reference="NOt-ym-UHV"/>
-                                <include reference="JPP-oy-dJ1"/>
+                                <include reference="ues-7G-CLR"/>
+                                <include reference="QI4-fN-HPi"/>
+                                <include reference="3W4-tb-opM"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="H0F-Mf-QQb"/>
-                                <include reference="YRD-Zc-eGf"/>
-                                <include reference="gXM-RS-Faf"/>
-                                <include reference="jk1-Qe-iyh"/>
-                                <include reference="lUW-Qa-Olf"/>
-                                <include reference="0zc-vT-cPE"/>
+                                <include reference="coZ-yS-w6g"/>
+                                <include reference="iR4-31-Jsl"/>
+                                <include reference="0YC-AP-ngd"/>
+                                <include reference="62B-18-WKN"/>
+                                <include reference="9Ia-Ep-pYN"/>
+                                <include reference="BHm-VC-E0t"/>
+                                <include reference="KHm-hA-fXA"/>
+                                <include reference="noW-HS-t6e"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="MyAlarms" destination="JPP-oy-dJ1" id="pHE-gC-764"/>
-                        <outlet property="NewAlarm" destination="NOt-ym-UHV" id="mSX-Rm-rzP"/>
+                        <outlet property="appTitle" destination="8bC-Xf-vdC" id="H8H-9S-xkg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
