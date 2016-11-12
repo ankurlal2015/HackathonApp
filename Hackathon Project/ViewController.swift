@@ -3,7 +3,7 @@
 //  Hackathon Project
 //
 //  Created by Ankur Lal on 11/12/16.
-//  Copyright © 2016 Ankur LalAnkur and Bailey. All rights reserved.
+//  Copyright © 2016 Ankur Lal and Bailey Pearson. All rights reserved.
 //
 
 import UIKit
@@ -24,13 +24,12 @@ class ViewController: UIViewController {
 
 
     @IBAction func newAlarm(sender: AnyObject) {
-        print( "new alarm")
+
     }
 
     @IBAction func myAlarms(sender: AnyObject) {
-        print ("my alarms")
+
     }
-    
     
 
 }
